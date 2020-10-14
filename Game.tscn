@@ -87,12 +87,13 @@ script = ExtResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Enemy_Container/Bat"]
 frames = SubResource( 4 )
-frame = 2
+playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy_Container/Bat"]
 shape = SubResource( 5 )
 
 [node name="RayCast2D" type="RayCast2D" parent="Enemy_Container/Bat"]
+enabled = true
 
 [node name="Turret" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1559.96, -70.8669 )
